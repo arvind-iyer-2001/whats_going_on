@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whats_going_on/UI/Screens/threadScreen.dart';
 import 'package:whats_going_on/sampleData.dart';
 
 class ChannelScreen extends StatelessWidget {
@@ -14,19 +15,31 @@ class ChannelScreen extends StatelessWidget {
       ),
       body: Container(
         child: ListView.builder(
-          itemCount: channel.channelThreads.length,
+          itemCount: channel.channelThreads.length + 4,
           itemBuilder: (context, index) {
-            final thread = channel.channelThreads[index];
+            final thread = channel.channelThreads[0];
             return Container(
               padding: EdgeInsets.all(5),
               child: ExpansionTile(
-                title: Text(thread.threadNumber),
+                title: Text(thread.threadMessage),
                 initiallyExpanded: true,
                 children: [
                   Container(
-                    child: Image.network(thread.threadImages[0]),
+                    height: 200,
+                    child: Image.network(
+                      thread.threadImages[0],
+                      fit: BoxFit.cover,
+                    ),
                   ),
-                  Text(thread.threadMessage),
+                  FlatButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(
+                        ThreadScreen.routeName,
+                        arguments: thread.threadId,
+                      );
+                    },
+                    child: Text('Go to Thread'),
+                  )
                 ],
               ),
             );

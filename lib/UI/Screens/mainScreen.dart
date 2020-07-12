@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../Widgets/suggestions.dart';
-
 import '../Widgets/myChannelList.dart';
+import '../Widgets/createChannel.dart';
 
 class MainScreen extends StatelessWidget {
   @override
@@ -21,12 +21,28 @@ class MainScreen extends StatelessWidget {
             Suggestions(),
             Divider(),
             Text(
-              'Your Channel Subscriptions',
+              'Your Subscribed Channels',
               textAlign: TextAlign.center,
             ),
             MyChannelsList(),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        icon: Icon(Icons.add),
+        label: Text('New Channel'),
+        onPressed: () {
+          print('New Channel');
+          showModalBottomSheet(
+            context: context,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(40),
+            ),
+            builder: (context) {
+              return CreateChannel();
+            },
+          );
+        },
       ),
     );
   }

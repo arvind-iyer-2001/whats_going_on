@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whats_going_on/UI/Screens/threadScreen.dart';
 
 // Screens
 import './UI/Screens/mainScreen.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       home: MainScreen(),
       routes: {
         ChannelScreen.routeName: (ctx) => ChannelScreen(),
+        ThreadScreen.routeName: (ctx) => ThreadScreen(),
       },
     );
   }
