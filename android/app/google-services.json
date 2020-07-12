@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "453275253646",
+    "firebase_url": "https://whats-going-on-1.firebaseio.com",
+    "project_id": "whats-going-on-1",
+    "storage_bucket": "whats-going-on-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453275253646:android:9a4894752fd673bda702df",
+        "android_client_info": {
+          "package_name": "com.sharsaru.whats_going_on.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453275253646-6rnicr796417rtubstc5e54b4u2s05e1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sharsaru.whats_going_on.android",
+            "certificate_hash": "6bc14a3b93665860965f0fd6d299d507f997cd1c"
+          }
+        },
+        {
+          "client_id": "453275253646-jr3meks577i6npgjeqbbau2b041eko1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3fKAX8YN87s_370eiatK8IRxdR5z-PkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453275253646-jr3meks577i6npgjeqbbau2b041eko1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
