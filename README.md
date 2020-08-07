@@ -1,9 +1,9 @@
 # Whats Going On
-:earth_asia: A location based mobile application that connects you to your local community and helps solve problems in the neighbourhood.
+:earth_asia: A location based mobile application that connects you to your local community and helps solve problems in the neighbourhood. For details of the app, see [here](https://github.com/f20190374/whats_going_on/blob/master/What's%20Going%20On_.pdf)
 
 ## Getting Started
+Entry for DevFest 1.0 Hackathon (see [here](https://github.com/f20190374/whats_going_on/blob/master/Devfest%20Hackthon%20Starter%20Kit.pdf))
 This project is a starting point for a Flutter application.
-
 
 ## Technologies Used
 
