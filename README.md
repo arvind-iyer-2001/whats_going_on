@@ -34,6 +34,5 @@ samples, guidance on mobile development, and a full API reference.
 ## Team Enigma
 1. Arvind Iyer
 2. Shikha Bhat
-3. Ruturaj Godse
+3. [Ruturaj Godse](https://github.com/Ruturaj-Godse/)
 4. Sarthak Deshpande
-
